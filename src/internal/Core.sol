@@ -377,7 +377,7 @@ library Core {
         string memory contractName,
         Options memory opts,
         bool requireReference
-    ) internal view returns (string[] memory) {
+    ) internal returns (string[] memory) {
         string memory outDir = Utils.getOutDir();
 
         string[] memory inputBuilder = new string[](2 ** 16);
@@ -387,7 +387,7 @@ library Core {
         inputBuilder[i++] = "npx";
         inputBuilder[i++] = string(abi.encodePacked("@openzeppelin/upgrades-core@", Versions.UPGRADES_CORE));
         inputBuilder[i++] = "validate";
-        inputBuilder[i++] = string(abi.encodePacked(outDir, "/build-info"));
+        inputBuilder[i++] = Utils.getBuildInfoDir(outDir);
         inputBuilder[i++] = "--contract";
         inputBuilder[i++] = Utils.getFullyQualifiedName(contractName, outDir);
 

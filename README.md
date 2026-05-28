@@ -59,6 +59,9 @@ Then add the following additional line to `remappings.txt`, in addition to the o
 openzeppelin-foundry-upgrades/=node_modules/@openzeppelin/foundry-upgrades/src/
 ```
 
+> **Note**
+> This library can also be used in Hardhat 3 Solidity tests, where the same remapping applies. See [Using with Hardhat — Solidity tests](https://docs.openzeppelin.com/upgrades-plugins/hardhat-upgrades#solidity-tests) for the Hardhat configuration and an example.
+
 #### Soldeer
 
 Follow the steps above, but instead of running `forge install OpenZeppelin/openzeppelin-foundry-upgrades`, use one of the install commands described in https://soldeer.xyz/project/openzeppelin-foundry-upgrades
@@ -112,11 +115,11 @@ FOUNDRY_OUT=my-output-dir
 
 ### Windows environments
 
-If you are using Windows, set the `OPENZEPPELIN_BASH_PATH` environment variable to the fully qualified path of the `bash` executable.
-For example, if you are using [Git for Windows](https://gitforwindows.org/), add the following line in the `.env` file of your project (using forward slashes):
+If you are using Windows, set the `OPENZEPPELIN_BASH_PATH` environment variable to the fully qualified path of the `bash` executable, using forward slashes. For example, with [Git for Windows](https://gitforwindows.org/):
 ```env
 OPENZEPPELIN_BASH_PATH="C:/Program Files/Git/bin/bash"
 ```
+In a Foundry project, you can set this in your project's `.env` file.
 
 ## Usage
 
