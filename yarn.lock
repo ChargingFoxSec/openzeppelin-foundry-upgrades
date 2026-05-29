@@ -1216,10 +1216,10 @@
     axios "^1.7.4"
     lodash "^4.17.21"
 
-"@openzeppelin/upgrades-core@^1.45.0-alpha.0":
-  version "1.45.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@openzeppelin/upgrades-core/-/upgrades-core-1.45.0-alpha.1.tgz#e969f5f78ddb8ae82041699445ec145c7815433a"
-  integrity sha512-JSYPTr/QqlYpfwrQwggxpF2/BJWp8n+wx35P1bNGivUmyGAGImcvIc+kwLwqJnUZ3fqQ6KK972bv01AeIGUSbQ==
+"@openzeppelin/upgrades-core@^1.45.0":
+  version "1.45.0"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/upgrades-core/-/upgrades-core-1.45.0.tgz#b4d7829aa496a3e410ae7d2871f3931159c8ec03"
+  integrity sha512-s2W/Z9vHmn715x9ZmgPa2aUy6TWg29T5+MC1FyVTuGWV14Td9r5lrzhTdK/A4f+RaMR7u6g/o0E7iLZMLitacA==
   dependencies:
     "@nomicfoundation/slang" "^0.18.3"
     bignumber.js "^9.1.2"
